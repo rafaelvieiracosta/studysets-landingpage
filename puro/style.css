@@ -49,3 +49,32 @@ body {
   color: #F5F7FA;
   font-size: 1.125em;
 }
+
+/* INTRODUCAO */
+.intro{
+  background: url('../img/bg-intro.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 150px 0;
+  text-align: center;
+  color: #F5F7FA;
+}
+.intro h1{
+  font-size: 3em;
+  line-height: 1.125;
+  font-weight: 600;
+}
+.intro h1::after{
+  content: '';
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: #F5F7FA;
+  margin: 15px auto;
+}
+.intro h1 > span{
+  color: #18A0FB;
+}
+.intro p{
+  font-style: italic;
+  font-size: 1.125em;
+}
