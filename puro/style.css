@@ -127,3 +127,68 @@ body {
   margin: 20px auto;
   max-width: 460px;
 }
+
+/* PRODUTOS */
+.produtos{
+  background: #474D59;
+  padding: 60px 0;
+  border-top: 3px solid #363B47;
+  border-bottom: 3px solid #363B47;
+}
+.produtos-container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+.produtos-container::after, .produtos-container::before{
+  content: '';
+  display: table;
+  clear: both;
+}
+.produtos-item{
+  width: 300px;
+  float: left;
+  margin: 0 10px 20px 10px;
+  color: #F5F7FA;
+}
+.produtos-item h2{
+  text-align: center;
+  font-size: 2.25em;
+  margin-bottom: 20px;
+}
+.produtos-item h2::before{
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: currentColor;
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 5px solid #474D59;
+  box-shadow: 0 0 0 10px currentColor;
+}
+h2.produtos-ouro::before{
+  color: #18A0FB;
+}
+h2.produtos-prata::before{
+  color: #0077C7;
+}
+h2.produtos-bronze::before{
+  color: #00234C;
+}
+.produtos-item p{
+  font-size: 0.875em;
+  line-height: 1.4em;
+}
+.produtos-botao{
+  width: 180px;
+  color: #F5F7FA;
+  border: 3px solid;
+  text-decoration: none;
+  display: block;
+  font-size: 1.125em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0;
+  margin: 20px auto 0 auto;
+}
