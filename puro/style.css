@@ -52,6 +52,19 @@ body {
   color: #F5F7FA;
   font-size: 1.125em;
 }
+@media(max-width: 739px){
+  .menu-logo{
+    float: none;
+    margin: 0 auto;
+    max-width: fit-content;
+  }
+  .menu-nav{
+    float: none;
+    clear: both;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+}
 
 /* INTRODUCAO */
 .intro{
@@ -80,6 +93,11 @@ body {
 .intro p{
   font-style: italic;
   font-size: 1.125em;
+}
+@media(max-width: 739px){
+  .intro{
+    padding: 60px 0;
+  }
 }
 
 /* SOBRE */
@@ -129,6 +147,23 @@ body {
   text-align: center;
   margin: 20px auto;
   max-width: 460px;
+}
+@media (min-width: 740px) and (max-width: 980px){
+  .sobre-container{
+    max-width: 720px;
+  }
+  .sobre-item{
+    width: 340px;
+  }
+}
+@media(max-width: 739px){
+  .sobre-container{
+    max-width: 300px;
+  }
+  .sobre-item{
+    width: 300px;
+    margin: 0 auto;
+  }
 }
 
 /* PRODUTOS */
@@ -195,6 +230,22 @@ h2.produtos-bronze::before{
   padding: 15px 0;
   margin: 20px auto 0 auto;
 }
+@media (min-width: 740px) and (max-width: 980px){
+  .produtos-container{
+    max-width: 720px;
+  }
+  .produtos-item{
+    width: 220px;
+  }
+}
+@media(max-width: 739px){
+  .produtos-container{
+    max-width: 300px;
+  }
+  .produtos-item{
+    margin: 10px auto 20px auto;
+  }
+}
 
 /* LOCAIS */
 .locais{
@@ -239,6 +290,25 @@ h2.produtos-bronze::before{
   border: 3px solid;
   color: #0B0C12;
   padding: 10px 20px;
+}
+@media (min-width: 740px) and (max-width: 980px){
+  .locais{
+    max-width: 720px;
+  }
+  .locais-item img,
+  .locais-item > div{
+    width: 340px;
+  }
+}
+@media(max-width: 739px){
+  .locais{
+    max-width: 300px;
+  }
+  .locais-item img,
+  .locais-item > div{
+    width: 300px;
+    margin: 0;
+  }
 }
 
 /* ASSINE */
@@ -298,6 +368,39 @@ h2.produtos-bronze::before{
   border: none;
   cursor: pointer;
 }
+@media (min-width: 740px) and (max-width: 980px){
+  .assine-container{
+    max-width: 720px;
+  }
+  .assine-info,
+  .assine form,
+  .assine input,
+  .assine button{
+    width: 340px;
+  }
+  .assine-info h2{
+    line-height: 30px;
+    margin: 20px 0 0;
+  }
+}
+@media(max-width: 739px){
+  .assine-container{
+    max-width: 300px;
+  }
+  .assine-info,
+  .assine form,
+  .assine input,
+  .assine button{
+    width: 300px;
+  }
+  .assine input{
+    margin: 10px 0 0;
+  }
+  .assine-info h2{
+    line-height: 30px;
+    margin: 0;
+  }
+}
 
 /* FOOTER */
 .footer{
@@ -324,4 +427,17 @@ h2.produtos-bronze::before{
   float: right;
   margin: 8px 10px 0;
   display: block;
+}
+@media(max-width: 739px){
+  .footer-container{
+    max-width: 300px;
+  }
+  .footer p{
+    float: none;
+    margin: 0;
+  }
+  .footer img{
+    float: none;
+    margin: 15px 0;
+  }
 }
