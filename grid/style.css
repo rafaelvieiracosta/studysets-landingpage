@@ -1,0 +1,175 @@
+/* RESET */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0b0c12;
+}
+*{
+  box-sizing: border-box;
+}
+
+/* MENU */
+.menu {
+  background: #0b0c12;
+  padding: 20px 0;
+}
+.menu-nav a{
+  text-decoration: none;
+  color: #F5F7FA;
+  font-size: 1.125em;
+}
+
+/* INTRODUCAO */
+.intro{
+  background: url('../img/bg-intro.jpg') no-repeat center center;
+  background-size: cover;
+  color: #F5F7FA;
+}
+.intro h1{
+  font-size: 3em;
+  font-weight: 600;
+}
+.intro h1::after{
+  content: '';
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: #F5F7FA;
+}
+.intro h1 > span{
+  color: #18A0FB;
+}
+.intro p{
+  font-style: italic;
+  font-size: 1.125em;
+}
+
+/* SOBRE */
+.sobre h2{
+  font-size: 2.25em;
+}
+.sobre-item h3{
+  font-size: 2.25em;
+  line-height: 1em;
+  background: #0b0c12;
+  color: #F5F7FA;
+  text-transform: lowercase;
+  font-weight: 600;
+}
+.sobre > p{
+  font-size: 1.125em;
+  line-height: 1.4em;
+  font-style: italic;
+}
+
+/* PRODUTOS */
+.produtos{
+  background: #474D59;
+  border-top: 3px solid #363B47;
+  border-bottom: 3px solid #363B47;
+}
+.produtos-item h2{
+  font-size: 2.25em;
+}
+.produtos-item h2::before{
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: currentColor;
+  border-radius: 50%;
+  border: 5px solid #474D59;
+  box-shadow: 0 0 0 10px currentColor;
+}
+h2.produtos-ouro::before{
+  color: #18A0FB;
+}
+h2.produtos-prata::before{
+  color: #0077C7;
+}
+h2.produtos-bronze::before{
+  color: #00234C;
+}
+.produtos-item p{
+  font-size: 0.875em;
+  line-height: 1.4em;
+}
+.produtos-botao{
+  color: #F5F7FA;
+  border: 3px solid;
+  text-decoration: none;
+  display: block;
+  font-size: 1.125em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* LOCAIS */
+.locais-item h2{
+  font-size: 2.25em;
+}
+.locais-item p{
+  font-size: 0.875em;
+  line-height: 1.4em;
+}
+.locais-item a{
+  font-size: 1.125em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 3px solid;
+  color: #0B0C12;
+}
+
+/* ASSINE */
+.assine{
+  background: #B2B8BF;
+}
+.assine-info h2{
+  font-size: 2em;
+  font-weight: 600;
+}
+.assine-info p{
+  font-size: 1.2em;
+  font-style: italic;
+}
+.assine form label{
+  display: none;
+}
+.assine input{
+  border: 3px solid #0B0C12;
+  background: none;
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+.assine button{
+  background: #0B0C12;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #F5F7FA;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer{
+  background: #0B0C12;
+}
+.footer p{
+  font-size: 1.125em;
+  line-height: 1.4em;
+  color: #636973;
+}
+.footer img{
+  display: block;
+}
