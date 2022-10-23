@@ -25,10 +25,23 @@ img{
   background: #0b0c12;
   padding: 20px 0;
 }
+.menu-nav ul{
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  flex-wrap: wrap;
+}
 .menu-nav a{
   text-decoration: none;
   color: #F5F7FA;
   font-size: 1.125em;
+  display: inline-block;
+  padding: 10px;
+}
+@media(max-width: 768px){
+  .menu-nav ul{
+    justify-content: start;
+  }
 }
 
 /* INTRODUCAO */
@@ -36,6 +49,8 @@ img{
   background: url('../img/bg-intro.jpg') no-repeat center center;
   background-size: cover;
   color: #F5F7FA;
+  padding: 150px 0;
+  text-align: center;
 }
 .intro h1{
   font-size: 3em;
@@ -47,6 +62,7 @@ img{
   width: 20px;
   height: 4px;
   background: #F5F7FA;
+  margin: 20px auto;
 }
 .intro h1 > span{
   color: #18A0FB;
@@ -55,10 +71,28 @@ img{
   font-style: italic;
   font-size: 1.125em;
 }
+@media(max-width: 768px){
+  .intro{
+    padding: 60px 0;
+  }
+}
 
 /* SOBRE */
+.sobre{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .sobre h2{
   font-size: 2.25em;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.sobre-container{
+  justify-content: center;
+}
+.sobre-item{
+  max-width: fit-content;
 }
 .sobre-item h3{
   font-size: 2.25em;
@@ -67,11 +101,19 @@ img{
   color: #F5F7FA;
   text-transform: lowercase;
   font-weight: 600;
+  width: 220px;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  top: -35px;
 }
 .sobre > p{
   font-size: 1.125em;
   line-height: 1.4em;
   font-style: italic;
+  max-width: 460px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* PRODUTOS */
@@ -79,9 +121,18 @@ img{
   background: #474D59;
   border-top: 3px solid #363B47;
   border-bottom: 3px solid #363B47;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.produtos-item{
+  margin-bottom: 40px;
+  color: #F5F7FA;
 }
 .produtos-item h2{
   font-size: 2.25em;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 .produtos-item h2::before{
   content: '';
@@ -92,6 +143,7 @@ img{
   border-radius: 50%;
   border: 5px solid #474D59;
   box-shadow: 0 0 0 10px currentColor;
+  margin: 20px auto;
 }
 h2.produtos-ouro::before{
   color: #18A0FB;
@@ -114,15 +166,38 @@ h2.produtos-bronze::before{
   font-size: 1.125em;
   font-weight: 600;
   text-transform: uppercase;
+  width: 180px;
+  display: block;
+  margin: 20px auto 0;
+  padding: 15px 0;
+  text-align: center;
+}
+.produtos-botao:hover{
+  text-decoration: underline;
+  color: #F5F7FA;
 }
 
 /* LOCAIS */
+.locais{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.locais-item{
+  margin-bottom: 40px;
+}
+.locais-item > .col-sm{
+  max-width: fit-content;
+}
 .locais-item h2{
   font-size: 2.25em;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 .locais-item p{
   font-size: 0.875em;
   line-height: 1.4em;
+  max-width: 320px;
+  margin-bottom: 20px;
 }
 .locais-item a{
   font-size: 1.125em;
@@ -130,19 +205,28 @@ h2.produtos-bronze::before{
   text-decoration: none;
   border: 3px solid;
   color: #0B0C12;
+  padding: 10px 20px;
 }
 
 /* ASSINE */
 .assine{
   background: #B2B8BF;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .assine-info h2{
   font-size: 2em;
   font-weight: 600;
+  line-height: 30px;
 }
 .assine-info p{
   font-size: 1.2em;
   font-style: italic;
+}
+.assine form{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
 }
 .assine form label{
   display: none;
@@ -154,6 +238,8 @@ h2.produtos-bronze::before{
   font-style: italic;
   font-family: "Poppins", sans-serif;
   outline: none;
+  align-self: flex-start;
+  padding: 10px;
 }
 .assine button{
   background: #0B0C12;
@@ -163,11 +249,27 @@ h2.produtos-bronze::before{
   color: #F5F7FA;
   border: none;
   cursor: pointer;
+  align-self: flex-start;
+  padding: 13px;
+}
+@media(max-width: 992px){
+  .assine-info{
+    align-self: center;
+  }
+  .assine input,
+  .assine button{
+    flex-grow: 1;
+    max-width: 100%;
+  }
 }
 
 /* FOOTER */
 .footer{
   background: #0B0C12;
+  padding: 40px 0;
+}
+.footer > .container > .row{
+  align-items: center;
 }
 .footer p{
   font-size: 1.125em;
@@ -176,4 +278,9 @@ h2.produtos-bronze::before{
 }
 .footer img{
   display: block;
+}
+@media(max-width: 576px){
+  .footer img{
+    margin-top: 10px;
+  }
 }
