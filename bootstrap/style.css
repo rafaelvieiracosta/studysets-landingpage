@@ -25,6 +25,9 @@ img{
   background: #0b0c12;
   padding: 20px 0;
 }
+.menu-logo img{
+  margin-top: 5px;
+}
 .menu-nav ul{
   display: flex;
   justify-content: flex-end;
@@ -184,6 +187,7 @@ h2.produtos-bronze::before{
 }
 .locais-item{
   margin-bottom: 40px;
+  justify-content: center;
 }
 .locais-item > .col-sm{
   max-width: fit-content;
@@ -206,6 +210,11 @@ h2.produtos-bronze::before{
   border: 3px solid;
   color: #0B0C12;
   padding: 10px 20px;
+}
+@media(max-width: 768px){
+  .locais-item{
+    justify-content: flex-start;
+  }
 }
 
 /* ASSINE */
