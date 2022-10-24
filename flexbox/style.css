@@ -45,13 +45,13 @@ body {
   text-decoration: none;
   color: #F5F7FA;
   font-size: 1.125em;
+  padding: 10px;
+  display: inline-block;
 }
 .menu-nav ul{
   display: flex;
   list-style: none;
-}
-.menu-nav ul li a{
-  padding: 10px;
+  flex-wrap: wrap;
 }
 
 /* INTRODUCAO */
@@ -270,6 +270,7 @@ h2.produtos-bronze::before{
   font-style: italic;
   font-family: "Poppins", sans-serif;
   outline: none;
+  max-width: 100%;
 }
 .assine button{
   flex: 1;
